@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-
 const yargs = require("yargs");
 const fs = require("fs");
 const chalk = require("chalk");
@@ -49,7 +48,7 @@ fs.readFile(yargsOptions.pathLocal, "utf-8", (err, data) => {
     if (!ignoreValues.includes(key)) {
       objResult.push(obj(key, value));
     } else {
-      objResult.push(obj(element, "--REPLACE--"));
+      objResult.push(obj(key, "--REPLACE--"));
     }
   }
 
