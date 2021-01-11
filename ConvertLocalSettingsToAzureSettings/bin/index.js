@@ -17,7 +17,10 @@ const yargsOptions = yargs
     describe: "Path to folder",
     type: "string",
     demandOption: true,
-  }).argv;
+  })
+  .example(
+    "ConvertLocalSettingsToAzureSettings -l local.settings.json -a AzureFunction.json"
+  ).argv;
 
 var objResult = [];
 const obj = (name, value) => {
