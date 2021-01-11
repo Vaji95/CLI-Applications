@@ -48,12 +48,11 @@ fs.readFile(yargsOptions.pathLocal, "utf-8", (err, data) => {
   for (const [key, value] of Object.entries(user.Values)) {
     if (!ignoreValues.includes(key)) {
       objResult.push(obj(key, value));
+    } else {
+      objResult.push(obj(element, "--REPLACE--"));
     }
   }
 
-  ignoreValues.forEach((element) => {
-    objResult.push(obj(element, "--REPLACE--"));
-  });
   const result = JSON.stringify(objResult);
   fs.writeFile(yargsOptions.pathAzure, result, "utf8", (err) => {
     if (err) {
