@@ -43,8 +43,8 @@ fs.readFile(yargsOptions.pathLocal, "utf-8", (err, data) => {
   if (err) {
     throw err;
   }
-  const user = JSON.parse(data.toString());
-  for (const [key, value] of Object.entries(user.Values)) {
+  const jsonData = JSON.parse(data.toString());
+  for (const [key, value] of Object.entries(jsonData.Values)) {
     if (!ignoreValues.includes(key)) {
       objResult.push(obj(key, value));
     } else {

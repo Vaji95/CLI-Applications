@@ -2,14 +2,15 @@
   "name": "convertlocalsettingstoazuresettings",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "convertLocalSettingsToAzureSettings.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Vajeeran Logeswaran",
   "license": "MIT",
   "bin": {
-    "ConvertLocalSettingsToAzureSettings": "./bin/index.js"
+    "ConvertLocalSettingsToAzureSettings": "./bin/convertLocalSettingsToAzureSettings.js",
+    "CreateLocalSettingsSampleJson": "./bin/createLocalSettingsSampleJson.js"
   },
   "dependencies": {
     "boxen": "^4.0.0",
