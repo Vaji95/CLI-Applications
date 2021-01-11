@@ -2,7 +2,7 @@
   "name": "hello-cli",
   "version": "1.0.0",
   "description": "",
-  "main": "bin/index.js",
+  "main": "bin/filter.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,8 +10,8 @@
   "author": "Vajeeran Logeswaran",
   "license": "MIT",
   "bin": {
-    "Filter": "./bin/index.js",
-    "BestAdvisMitarbeiter": "./bin/advismitarbeiter.js"
+    "Filter": "./bin/filter.js",
+    "DisplayName": "./bin/displayName.js"
   },
   "dependencies": {
     "boxen": "^4.0.0",

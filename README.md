@@ -1,1 +1,3 @@
-# myCLI
+# Install
+
+npm install -g

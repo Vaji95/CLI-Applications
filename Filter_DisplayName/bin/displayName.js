@@ -21,9 +21,9 @@ const options = yargs
 let person = "";
 
 if (options.männlich == undefined) {
-  person = "Livia Barmet";
+  person = "Freni Logeswaran";
 } else {
-  person = "Daniel Pauli";
+  person = "Vajeeran Logeswaran";
 }
 
 const greeting = chalk.white(`${person}!`);
