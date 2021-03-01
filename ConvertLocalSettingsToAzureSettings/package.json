@@ -10,7 +10,8 @@
   "license": "MIT",
   "bin": {
     "ConvertLocalSettingsToAzureSettings": "./bin/convertLocalSettingsToAzureSettings.js",
-    "CreateLocalSettingsSampleJson": "./bin/createLocalSettingsSampleJson.js"
+    "CreateLocalSettingsSampleJson": "./bin/createLocalSettingsSampleJson.js",
+    "ConvertAzureSettingsToLocalSettings": "./bin/convertAzureSettingsToLocalSettings.js"
   },
   "dependencies": {
     "boxen": "^4.0.0",

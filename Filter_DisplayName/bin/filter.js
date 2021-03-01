@@ -28,7 +28,7 @@ const PysthonSehllOptions = {
   encoding: "utf8",
   pythonPath: "C:/Python38/python.exe",
   pythonOptions: ["-u"], // get print results in real-time
-  scriptPath: "C:/GIT/myCLI/hello-cli/scripts",
+  scriptPath: "C:/MASTERGIT/Privat/CLI-Applications/Filter_DisplayName/scripts",
   args: [yargsOptions.path, yargsOptions.name, yargsOptions.type],
 };
 PythonShell.run("FilterFiles.py", PysthonSehllOptions, function (err, results) {
